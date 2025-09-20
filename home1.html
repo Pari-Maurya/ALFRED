@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+  <style>
+    
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f7c6cd; /* Header background */
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; /* Adjust size */
+    height: auto;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ee5948;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login {
+    background-color: #ee8175;
+    color: white;
+}
+
+.signup {
+    background-color: #ee9b95;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+    background-color: #f15247;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    transform: translateY(-2px);
+}
+.hero {
+    width: 100%;
+    background-color: #fdb6b0;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 80px;
+    padding-top: 20px;
+}
+
+/* Background dotted circles */
+
+
+/* Typography */
+ h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 0px;
+    color: #f6f4f4;
+} 
+
+/* CTA Button */
+.cta-button {
+    margin-top: 15px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: white;
+   color: black;
+}
+
+.key{
+  padding-top: 80px;
+  margin-top: 12px;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 80px;
+}
+.feature-card{
+  display: flex;
+  margin-left: 250px;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+.profile {
+  width: 300px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 50px;
+  border-radius: 8px;
+  background-color: rgb(247, 200, 83);
+  transition: all 0.3s ease-in-out;
+
+}
+
+.profile-picture {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.mutual-friends-row {
+  margin-top: 0px;
+}
+.name-points{
+  font-size: 20px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+.profile:hover{
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    transform: translateY(-8px);
+}
+.heroine {
+        
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            padding: 20px;
+            max-width: 1400px;
+            margin-top: 12px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        .hero-content {
+            padding: 2rem;
+        }
+
+        .hero-title {
+            font-size: 28px;
+            margin-bottom: 2rem;
+            line-height: 1.4;
+            font-weight: lighter;
+            font-family: Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .highlight-orange {
+            color:#f15247;
+        }
+
+        .highlight-teal {
+            color:#ee759b;
+        }
+
+        .highlight-yellow {
+            color: #f1d741;
+        }
+         .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease-in-out;
+        }
+        .hero-image:hover{
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    transform: translateY(-8px);
+        }
+        .footer {
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f7c6cd;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .logo-circle {
+            width: 24px;
+            height: 24px;
+            background-color: #FFD700;
+            border-radius: 50%;
+        }
+
+        .footer-section h3 {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #000;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-links a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: #000;
+        }
+
+        .copyright {
+            text-align: right;
+            color: #000;
+        }
+
+        .copyright p {
+            margin-bottom: 0.5rem;
+        }
+
+        .copyright .credits {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 100px auto;
+        }
+
+        .faq-title {
+            text-align: center;
+            color: #1a1a1a;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+            color: #1a1a1a;
+            user-select: none;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 1.5rem;
+        }
+
+        .faq-answer-content {
+            color: #666;
+            padding-bottom: 1.5rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px; /* Adjust this value based on your content */
+        }
+        .faq-part{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            padding: 2rem;
+        }
+
+  </style>
+</head>
+<body class ="background">
+  <header>
+    <div class="brand">
+        <img src="logo.png" alt="Brand Logo" class="logo">
+        <h1 class="brand-name">ALFRED</h1>
+    </div>
+    <div class="buttons">
+        <a href="login.html">
+            <button class="login">Login</button>
+        </a>
+        <a href="login.html">
+            <button class="signup" href="signup.html">Signup</button>
+        </a>
+        
+    </div>
+</header>
+<div class="alfred">
+  <img src="para2.png" alt="no image found" width="100%" height="100%">
+</div>
+<section class="hero">
+  <div class="content">
+      <h1>Talk. Heal. Get Better.</h1>
+      <p>Start today and get rid of your stress.</p>
+      <button class="cta-button">Get Started</button>
+  </div>
+</section>
+<div class="features">
+    <div class="key">
+    Key Features</div>
+
+
+<div class="feature-card">
+  <div class="profile">
+    <img class="profile-picture" src="img1.jpg">
+    <div class="mutual-friends-row"> 
+        <ul class="name-points">
+          <li>Your non-judgemental companion</li><br>
+          <li>Voice-tone analysis</li><br>
+          <li>24/7 Availability</li><br>
+        </ul>
+      
+    </div>
+  </div>
+  
+  <div class="profile">
+    <img class="profile-picture" src="img3.jpg">
+    <div class="mutual-friends-row"> 
+        <ul class="name-points">
+          <li>Self assement</li><br>
+          <li>Behavioral Tracking</li><br>
+          <li>Mindful activities</li><br>
+        </ul>   
+    </div>
+    
+  </div>
+  
+  <div class="profile">
+    <img class="profile-picture" src="img2.jpg">
+    <div class="mutual-friends-row">
+        <ul class="name-points">
+          <li>Your full time companion</li><br>
+          <li>Motivational Resources</li><br>
+          <li>Student Dashboard</li><br>
+        </ul>
+    </div>
+  </div>
+</div>
+<main class="heroine">
+  <div class="hero-content">
+      <h1 class="hero-title">
+        Life as a B.Tech student? Stress, deadlines, and a never-ending cycle of assignments. We get it. That's why Team <span class="highlight-orange"> Ko-ffee Addicts</span> brewed up <span class="highlight-teal">ALFRED</span> (Advanced Learning Framework for Responsive Emotion Detection)—your non-judgy, always-available AI buddy who listens when no one else does.
+
+      </h1>
+  </div>
+  <div class="hero-image-container">
+      <img 
+          src="about.jpg" 
+          alt="Illustration of a therapy session with therapist and client" 
+          class="hero-image"
+      >
+  </div>
+</main>
+<main class="heroine">
+  <div class="hero-image-container">
+      <img 
+          src="about-2.jpg" 
+          alt="Illustration of a therapy session with therapist and client" 
+          class="hero-image"
+      >
+  </div>
+  <div class="hero-content">
+    <h1 class="hero-title">
+        Think of ALFRED as your chill therapist, minus the awkward <span class="highlight-teal">“beta, bas sochna bandh kar do”</span> advice. Using AI, NLP, and sentiment analysis, ALFRED understands your mood, offers personalized advice, suggests quick mindfulness hacks, and even tracks behavioral patterns (without making it creepy). Basically, it’s like your <span class="highlight-orange">low-key emotional wingman</span>—there when you need it, invisible when you don’t.
+ 
+    </h1>
+</div>
+</main>
+<main class="heroine">
+    <div class="hero-content">
+        <h1 class="hero-title">
+            No more <span class="highlight-orange">“log kya kahenge”</span> stopping you from getting support. No more bottling up stress because there’s no safe space. ALFRED is here to normalize <span class="highlight-yellow">mental health</span>, help you vibe better with life, and keep you sane through those brutal 8 AM lectures.
+
+        </h1>
+    </div>
+    <div class="hero-image-container">
+        <img 
+            src="img1.jpg" 
+            alt="Illustration of a therapy session with therapist and client" 
+            class="hero-image"
+        >
+    </div>
+  </main>
+  <main class="heroine">
+    <div class="hero-image-container">
+        <img 
+            src="img4.jpg" 
+            alt="Illustration of a therapy session with therapist and client" 
+            class="hero-image"
+        >
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        So, whether you're doom-scrolling at 2 AM, stressing over placements, or just need someone <span class="highlight-orange">(well, something) </span>to listen without judging, ALFRED’s got your back. Because your <span class="highlight-teal">mental health > marks</span>, always.  
+   
+      </h1>
+  </div>
+  </main>
+  <div class="faq-container">
+    <h1 class="faq-title">Frequently Asked Questions</h1>
+ <div class="faq-part">  
+    <div class="faq-item">
+        <div class="faq-question">What is ALFRED?</div>
+        <div class="faq-answer">
+            <div class="faq-answer-content">
+                ALFRED (Advanced Learning Framework for Responsive Emotion Detection) is an AI-powered virtual therapist designed to help students manage stress, anxiety, and mental health challenges through personalized support, mindfulness suggestions, and behavioral insights.
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">How do I start using ALFRED?</div>
+        <div class="faq-answer">
+            <div class="faq-answer-content">
+                Simply sign up on our website, log in, and start chatting with ALFRED whenever you need support. It’s available 24/7.
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Can ALFRED track my emotional patterns?</div>
+        <div class="faq-answer">
+            <div class="faq-answer-content">
+                Yes, ALFRED can recognize emotional patterns over time and suggest ways to improve well-being—but without invading your privacy or making things uncomfortable.
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Is my data safe with ALFRED?</div>
+        <div class="faq-answer">
+            <div class="faq-answer-content">
+                Absolutely! We prioritize user privacy and ensure all conversations are encrypted. Your chats stay confidential and are never shared with anyone. 
+            </div>
+        </div>
+    </div>
+</div>
+</div> 
+
+<footer class="footer">
+  <div class="footer-section">
+     <img src="logo.png" alt="hehehe" class="logo">ALFRED    
+  </div>
+
+  <div class="footer-section">
+      <h3>socials</h3>
+      <div class="footer-links">
+          <a href="#">instagram</a>
+          <a href="#">facebook</a>
+          <a href="#">x (twitter)</a>
+          <a href="#">linkedin</a>
+      </div>
+  </div>
+
+  <div class="footer-section">
+      <h3>legal</h3>
+      <div class="footer-links">
+          <a href="#">privacy policy</a>
+          <a href="#">terms of service</a>
+          <a href="#">ai disclaimer</a>
+      </div>
+  </div>
+
+  <div class="footer-section copyright">
+      <p>© 2025 ALFRED Inc</p>
+      <p class="credits">by KOFEE ADDICTS</p>
+  </div>
+</footer>
+<script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            // Get the parent faq-item
+            const faqItem = question.parentElement;
+            
+            // Check if this item is already active
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close all other FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+                const answer = item.querySelector('.faq-answer');
+                answer.style.maxHeight = '0';
+            });
+            
+            // If this item wasn't active, open it
+            if (!isActive) {
+                faqItem.classList.add('active');
+                const answer = faqItem.querySelector('.faq-answer');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        });
+    });
+</script>
+</body>
+</html>
